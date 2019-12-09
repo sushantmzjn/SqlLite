@@ -72,4 +72,11 @@ public class MyHelper extends SQLiteOpenHelper {
         }
         return dictionaryList;
     }
+
+    public Integer deleteData(String id){
+        SQLiteDatabase db = this.getWritableDatabase();
+       return db.delete(tblWord, "wordID = ?", new String[]{id});
+
+    }
+
 }

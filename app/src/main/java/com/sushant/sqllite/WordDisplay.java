@@ -39,11 +39,11 @@ public class WordDisplay extends AppCompatActivity {
         List<Word> wordList = new ArrayList<>();
         wordList = helper.GetAllWords(sqLiteDatabase);
 
-        final HashMap<String, String> hashMap = new HashMap<>();
-
-        for (int i = 0; i < wordList.size(); i++) {
-            hashMap.put(wordList.get(i).getWord(), wordList.get(i).getMeaning());
-        }
+//        final HashMap<String, String> hashMap = new HashMap<>();
+//
+//        for (int i = 0; i < wordList.size(); i++) {
+//            hashMap.put(wordList.get(i).getWord(), wordList.get(i).getMeaning());
+//        }
 //        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, new ArrayList<String>(hashMap.keySet()));
 //        lst.setAdapter(arrayAdapter);
 
